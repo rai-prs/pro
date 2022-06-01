@@ -1,0 +1,14 @@
+
+.Potepan {
+  
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg.webp);
+  background-size: cover;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  
+}
+.menu a{
+  color: #000000;
+}
