@@ -1,3 +1,11 @@
+html {
+  width:100%;
+}
+
+body {
+  margin: 0px;
+}
+
 
 .Potepan {
   
@@ -18,9 +26,15 @@
   font-size: 10px;
   margin:0px 17px;
   font-weight: 600;
+  transition:.5s;
   text-align:center;
   text-decoration:none
 }
+
+.content-menu:hover {
+  opacity: .7;
+}
+
 
 .menu span:first-child {
   display: block;
@@ -50,31 +64,41 @@ header {
   width: 100%;
 }
 
+.headerlogo {
+  position:relative;
+  top:20px;
+  left:50px;
+  height:40px;
+}
+
 .headerlogo img{
   display: block;
     height: 20px;
     width: auto;
-    position:relative;
-    top:10px;
-    left:10px;
-  
+    transition:.5s;
 }
-
-.headerlogo {
-  height:40px;
-  transition: opacity .2s;
-}
+ .headerlogo:hover img {
+   opacity: .7;
+   
+ }
 
 .guidance {
   display: flex;
   position: relative;
   left: 150px;
+  width:50%;
   list-style: none
 }
 .guidance a {
-  display: inline-block;
-  margin:20px 10px;
+  display: flex;
+  margin-top:20px;
+  margin-bottom: 20px;
+  transition: .5s;
   text-decoration:none
+}
+
+.guidance:hover a {
+  opacity:.7;
 }
 
 .free {
@@ -100,6 +124,7 @@ header {
 
 
 h1 {
+  display: inline-block;
   text-align: center;
   height: 108px;
   width:520px;
@@ -108,9 +133,11 @@ h1 {
   font-family: 'Lato',sans-serif;
   font-size: 38px;
   font-weight: 700;
+  margin-right: 0px;
 }
 
 .no1 {
+  
   position: relative;
   left: 150px;
 }
@@ -119,13 +146,16 @@ h1 {
 
 
 .nots {
+  display: inline-block;
   color: #a2a2a4;
-  font-size: 12px;
+  font-size: 10px;
   position: relative;
   left: 150px;
   padding:20px 0px;
   margin:0px;
   list-style: none;
+  width: 70%;
+  box-sizing: border-box;
 }
 
 .AboutWrapper {
@@ -170,4 +200,26 @@ h2 {
 .About img{
   vertical-align: middle;
   padding: 0px 10px 0px 0px;
+}
+
+@media screen and (max-width: 959px) {
+ 
+}
+
+
+@media screen and (max-width: 480px) {
+  .Potepan {
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg.webp);
+    background-size:cover;
+    
+  }
+  
+  .img {
+    max-width:100%;
+    height:auto;
+  }
+  
+  .nots {
+    word-break: break-all;
+  }
 }
