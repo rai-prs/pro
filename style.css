@@ -4,6 +4,7 @@ html {
 
 body {
   margin: 0px;
+  position: relative;
 }
 
 
@@ -11,6 +12,9 @@ body {
   
   background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg.webp);
   background-size: cover;
+  background-position: absolute;
+  top:0px;
+  left:0px;
 }
 .menu {
   display: flex;
