@@ -1,5 +1,6 @@
 html {
-  width:100%;
+
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -25,16 +26,17 @@ body {
   justify-content: flex-end;
   list-style: none;
   width:100%;
-  margin-right: 20px;
+  padding: 0px;
 }
 
 .content-menu {
   display: inline-block;
   color: #000000;
-  font-size: 10px;
+  font-size: 13px;
   margin:0px 17px;
   font-weight: 600;
   transition:.5s;
+  font-family: 'Lato',sans-serif;
   text-align:center;
   text-decoration:none
 }
@@ -56,7 +58,7 @@ body {
 }
   
 .data1 {
-   background-color: #f79214;
+  background-color: #f79214;
   background-size: cover;
   color: #ffffff;
   border-radius: 50px;
@@ -68,27 +70,31 @@ body {
 
 header {
   display: flex;
-  
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 100%;
 }
 
 .headerlogo {
-  position:relative;
-  top:20px;
-  left:50px;
-  height:40px;
+  
 }
 
 .headerlogo img{
+  margin: 0px 20px;
   display: block;
-    height: 20px;
-    width: auto;
-    transition:.5s;
+  height: 20px;
+  width: auto;
+  transition:.5s;
 }
  .headerlogo:hover img {
    opacity: .7;
    
  }
+
+.navi {
+  width: 100%;
+}
+
 
 .guidance {
   display: flex;
@@ -96,7 +102,7 @@ header {
   list-style: none
 }
 .guidance a {
-  display: flex;
+  
   margin-top:20px;
   margin-bottom: 20px;
   transition: .5s;
@@ -108,6 +114,7 @@ header {
 }
 
 .free {
+  display: flex;
   background-color: #f79214;
   background-size: cover;
   color: #ffffff;
@@ -116,6 +123,7 @@ header {
 }
 
 .data {
+  display: flex;
   background-color: #fff;
   background-size: cover;
   border: 1px solid #e0e0e0;
@@ -131,7 +139,7 @@ header {
 
 .FirstView {
   margin-bottom: 0px;
-  /*width: fit-content;*/
+  width: fit-content;
 }
 
 
@@ -256,26 +264,40 @@ h2 {
     padding: 0px;
   }
   
+  
   .FirstView {
-    margin-top: 50px;
+    margin-top: 0px;
+    padding-top:50%;
+    height:auto;
+    position: relative;
+    width:100%
+	  
   }
   
   .no1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
-    width: 50%;
+    width: 100%;
     margin: 0px auto;
     max-width: 100%;
     height: auto;
   }
-  
-  .no1 img {
-    width: 50%;
+   .center {
+    width: 40%;
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
   }
+  
+  .edge {
+    width: 27.5%;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+  
+ 
   
   .nots {
     word-break: break-all;
@@ -284,9 +306,8 @@ h2 {
   
   h1 {
     display: block;
-    font-size: 20px;
+    font-size: 25px;
     margin: 0px auto 0px auto;
-    
   }
   
   .drawer_hidden {
@@ -296,12 +317,10 @@ h2 {
 
 .drawer_open {
   display: flex;
-  height: 60px;
-  width: 60px;
-  justify-content: center;
+  height: 30px;
+  width: 90%;
+  justify-content: flex-end;
   align-items: center;
-  position: relative;
-  left: 100%;
   z-index: 100;
   cursor: pointer;
 }
@@ -375,7 +394,7 @@ h2 {
 
 .Wrapper {
   background-color: #ffffff;
-  padding: 120px 0px;
+  padding: 200px 0px;
 }
 .About {
   display: block;
@@ -384,6 +403,18 @@ h2 {
 
 .About__video {
   margin: 0px auto;
+  display: block;
+}
+
+li .data {
+  display: none;
+}
+
+.guidance {
+  display: block;
+}
+
+.free {
   display: block;
 }
 
